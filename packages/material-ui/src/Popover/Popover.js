@@ -132,6 +132,8 @@ const Popover = React.forwardRef(function Popover(props, ref) {
 
       const resolvedAnchorEl = getAnchorEl(anchorEl);
 
+      console.log("Popover.resolvedAnchorEl  =", resolvedAnchorEl);
+      
       // If an anchor element wasn't provided, just use the parent body element of this Popover
       const anchorElement =
         resolvedAnchorEl && resolvedAnchorEl.nodeType === 1
